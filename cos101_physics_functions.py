@@ -50,7 +50,7 @@ if reply == 1:
   force = calculate_force(mass, acceleration)
   print("Force (F):", force, "N")
 
-if reply == 2:
+elif reply == 2:
   print("*****CALCULATION FOR FINAL VELOCITY SELECTED*****")
   print("The formula of final velocity is v = u + at")
   print("")
@@ -63,7 +63,7 @@ if reply == 2:
   final_velocity = calculate_velocity(initial_velocity, acceleration, time)
   print("Final Velocity (V):", final_velocity, "m/s")
 
-if reply == 3:
+elif reply == 3:
   print("*****CALCULATION FOR KINETIC ENERGY SELECTED*****")
   print("The formula for Kinetic Energy is KE = 0.5 * m * v^2")
   print("")
@@ -74,7 +74,7 @@ if reply == 3:
   kinetic_energy = calculate_kinetic_energy(mass, final_velocity)
   print("Kinetic Energy (KE):", kinetic_energy, "J")
 
-if reply == 4:
+elif reply == 4:
   print("*****CALCULATION FOR POTENTIAL ENERGY SELECTED*****")
   print("The formula for Potential Energy is PE = mgh")
   print("")
@@ -87,7 +87,7 @@ if reply == 4:
   potential_energy = calculate_potential_energy(mass, gravity, height)
   print("Potential Energy (PE):", potential_energy, "J")
 
-if reply == 5:
+elif reply == 5:
   print("*****CALCULATION FOR WORK DONE SELECTED*****")
   print("The formula for Work Done is W = F * d * cos(theta)")
   print("")
@@ -97,6 +97,9 @@ if reply == 5:
   displacement = float(input())
   work_done = calculate_work_done(force, displacement)
   print("Work Done (W):", work_done, "J")
+
+else:
+  print("Invalid input provided try again.")
 
 
 
